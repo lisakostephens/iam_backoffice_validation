@@ -1,0 +1,78 @@
+.edit-resource {
+    color: $grey;
+    
+    .step {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 0px 40px;
+        border-bottom: 2px solid $blue-grey;
+    }
+    .step:nth-last-child(1) {
+        border: none;
+    }
+
+    .step::-webkit-scrollbar-track {
+        background: white; 
+    }
+    .step::-webkit-scrollbar {
+        width: 8px;
+    }
+    .step::-webkit-scrollbar-thumb {
+        background-color: $blue-grey;
+        border-radius: 10px;
+    }
+
+    .add-scope {
+        background: white;
+        color: #343C44;
+        display: flex;
+        font-size: 20px;
+        padding: 0;
+        gap: 5px;
+        margin: 0;
+        align-items: center;
+
+        img {
+            height: 15px;
+            filter: invert(51%) sepia(73%) saturate(385%) hue-rotate(81deg) brightness(94%) contrast(89%);
+        }
+    }
+
+    .add-scopes {
+        .scopes-list {
+            width: 100%;
+            overflow: auto;
+        }
+    }
+
+    input {
+        border: 1px solid $blue-grey;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    input:focus-visible {
+        border: 1px solid $light-green;
+        outline: none;
+    }
+
+    small {
+        font-size: 10px;
+        margin-bottom: 5px;
+        color: $light-green;
+    }
+
+    button {
+        display: flex;
+        margin-left: auto;
+    }
+
+    img.done {
+        max-width: 50px;
+        width: 100%;
+        filter: invert(70%) sepia(99%) saturate(300%) hue-rotate(73deg) brightness(88%) contrast(89%);
+    }
+}
+

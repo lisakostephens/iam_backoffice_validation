@@ -1,0 +1,40 @@
+button {
+  color: white;
+  background: $purple;
+  padding: 12px 25px;
+  border-radius: 10px;
+  width: fit-content;
+  border: none;
+  transition: 0.25s;
+  font-size: 12px;
+  font-weight: 600;
+  &.secondary {
+    border-radius: 25px;
+  }
+  &:hover {
+    background-color: $dark-purple;
+  }
+  &.active {
+    background-color: $green;
+    &:hover {
+      background-color: $dark-green;
+    }
+  }
+  &.innactive {
+    color: $red;
+    background-color: #f3f3f3;
+    &:hover {
+      background-color: #b8b8b8;
+    }
+  }
+  &:disabled {
+    filter: brightness(0.5);
+  }
+  &.small-btn {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

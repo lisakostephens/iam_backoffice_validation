@@ -1,0 +1,11 @@
+form, .form {
+    label {
+        color: #343C44;
+        margin-top: 15px;
+    }
+    input[type='text'], input[type='password'], textarea {
+        border: 1px $blue-grey solid;
+        border-radius: 4px;
+        padding: 16px;
+    }
+}

@@ -1,0 +1,30 @@
+.service-accounts {
+    .create-service-account {
+        width: 800px;
+        @media screen and (max-width: 1000px) {
+            width: inherit;
+        }
+    }
+
+    button.show-add-service {
+        position: fixed;
+        bottom: 4vh;
+        right: 4vw;
+        font-size: 15px;
+    }
+
+    .name {
+        width: 220px;
+        line-break: anywhere;
+    }
+
+    .display-name {
+        width: 220px;
+        line-break: anywhere;
+    }
+
+    .description {
+        width: 260px;
+        line-break: anywhere;
+    }
+}

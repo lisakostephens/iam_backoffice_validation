@@ -1,0 +1,47 @@
+.add-scope {
+    display: flex;
+    border-top: 1px solid $blue-grey;
+    padding: 20px 10px;
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    input {
+        &.label {
+            width: 200px;
+        }
+        &.name {
+            width: 200px;
+        }
+        &.description {
+            width: 300px;
+        }
+    }
+
+    .remove-label {
+        background-color: white;
+        padding: 0;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img {
+            filter: invert(19%) sepia(88%) saturate(3183%) hue-rotate(341deg) brightness(81%) contrast(103%);
+        }
+    }
+
+    .remove-label:hover {
+        background-color: lightpink;
+    }
+}
+
+.add-scope:nth-child(1) {
+    border: none;
+}

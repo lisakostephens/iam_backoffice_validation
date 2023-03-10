@@ -1,0 +1,13 @@
+.page.resources {
+    min-width: 60vw;
+    max-height: 95vh;
+    border-radius: 15px 0 0 15px;
+    scrollbar-color: $blue-grey white;
+
+    button.show-add-resource {
+        position: fixed;
+        bottom: 4vh;
+        right: 4vw;
+        font-size: 15px;
+    }
+}
